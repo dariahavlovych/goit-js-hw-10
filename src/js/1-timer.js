@@ -26,7 +26,7 @@ const options = {
           startBtn.disabled = true;
           iziToast.error({
             message: 'Please choose a date in the future',
-              position: 'topRight',
+            position: 'topRight',
             timeout: 2000
           });
       } else { 
