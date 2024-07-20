@@ -3,11 +3,9 @@ import "flatpickr/dist/flatpickr.min.css";
 import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
 
-// TODO: add stiles
-
-const timePicker = document.querySelector("input#datetime-picker");
 const startBtn = document.querySelector("button[data-start]");
 startBtn.disabled = true;
+const timePicker = document.querySelector("input#datetime-picker");
 const dataDays = document.querySelector("span[data-days]");
 const dataHours = document.querySelector("span[data-hours]");
 const dataMinutes = document.querySelector("span[data-minutes]");
@@ -58,7 +56,6 @@ function timerMarckupUpdate({ days, hours, minutes, seconds }) {
     dataMinutes.textContent = String(minutes).padStart(2, 0);
     dataSeconds.textContent = String(seconds).padStart(2, 0);
 }
-
 
 function convertMs(ms) {
   // Number of milliseconds per unit of time

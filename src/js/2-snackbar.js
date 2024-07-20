@@ -37,9 +37,3 @@ function onSubmitHadler(event) {
     
     event.target.reset();
 }
-
-// const promise = new Promise((resolve, reject) => {
-//   setTimeout(() => {
-//     reject(5);
-//   }, 2000);
-// });
